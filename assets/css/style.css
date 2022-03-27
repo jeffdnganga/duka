@@ -18,6 +18,7 @@ a:hover {
 #header {
     transition: all 0.5s;
     padding: 16px 0;
+    background-color: white;
 }
   
 /* Navigation menu */
@@ -70,76 +71,68 @@ a:hover {
       display: none;
     }
 }
-.navbar-mobile {
-    position: fixed;
-    overflow: hidden;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    background: rgba(78, 78, 78, 0.9);
-    transition: 0.3s;
-    z-index: 999;
+
+/* Promo area */
+#promo-section {
+    height: 100vh;
+    color: black;
+    padding-top: 400px;
 }
-.navbar-mobile .mobile-nav-toggle {
+.promo-content {
+    width: 300px;
+    height: 300px;
+}
+.promo-content .bigger-text {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 78.3486px;
+    line-height: 65px;
+    /* or 83% */
+
+    letter-spacing: -0.05em;
+}
+.promo-content .smaller-text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 23.5046px;
+    line-height: 35px;
+}
+.promo-content .btn {
+    width: 300px;
+    text-transform: uppercase;
+    background: black;
+    color: white;
+}
+
+/* Categories section */
+#categories-section {
+    height: 100vh;
+    padding-top: 100px;
+}
+.category-item {
+    height: 600px;
+    width: 600px;
+    background-color: #1e1e1e;
+    margin: 0px auto;
+    color: white;
+    padding-left: 20px;
+    position: relative;
+}
+.category-item p {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 79.2661px;
+    line-height: 93px;
+}
+.category-item .bottom-content {
+    height: 60px;
+    width: 250px;
     position: absolute;
-    top: 15px;
-    right: 15px;
+    bottom: 10px;
 }
-.navbar-mobile ul {
-    display: block;
-    position: absolute;
-    top: 55px;
-    right: 15px;
-    bottom: 15px;
-    left: 15px;
-    padding: 10px 0;
-    background-color: #fff;
-    overflow-y: auto;
-    transition: 0.3s;
+.category-item .bottom-content p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 54px;
 }
-.navbar-mobile > ul > li {
-    padding: 0;
-}
-.navbar-mobile a:hover:before, .navbar-mobile li:hover > a:before, .navbar-mobile .active:before {
-    visibility: hidden;
-}
-.navbar-mobile a, .navbar-mobile a:focus {
-    padding: 10px 20px;
-    font-size: 15px;
-    color: #4e4e4e;
-}
-.navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
-    color: #0078ff;
-}
-.navbar-mobile .getstarted, .navbar-mobile .getstarted:focus {
-    margin: 15px;
-}
-.navbar-mobile .dropdown ul {
-    position: static;
-    display: none;
-    margin: 10px 20px;
-    padding: 10px 0;
-    z-index: 99;
-    opacity: 1;
-    visibility: visible;
-    background: #fff;
-    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
-}
-.navbar-mobile .dropdown ul li {
-    min-width: 200px;
-}
-.navbar-mobile .dropdown ul a {
-    padding: 10px 20px;
-}
-.navbar-mobile .dropdown ul a i {
-    font-size: 12px;
-}
-.navbar-mobile .dropdown ul a:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover > a {
-    color: #0078ff;
-}
-.navbar-mobile .dropdown > .dropdown-active {
-    display: block;
-}
-      
-        
